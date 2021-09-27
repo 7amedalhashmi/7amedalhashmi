@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>H letter</title>
+</head>
+
+<body>
+    <div class="container">
+        <svg viewBox="-600 -600 1920 1080">
+                <g>
+                  <path id="Hpath" fill="#1D3557" d="M 312.5,258.6
+                         H 198.7
+                         V 122.8
+                         H 111
+                         V 459
+                         h 88.9
+                         V 341.2
+                         h 113.8
+                         V 459
+                         h 88.3
+                         c 0,0,0 -336.2,0 -336.2
+                         c -21.6,44.3 -67,43 -88.2,0
+                         C 312.5,258.6 z"/>
+                </g>
+                <g>
+                  <circle id="circle" fill="#437899" cx="357" cy="95" r="32">
+                </g>
+              </svg>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #000;
+            opacity: 0.5;
+            z-index: -999;
+            height: 100vh;
+        }
+        
+        .container>svg {
+            z-index: 9999;
+            /* height: 100vh; */
+        }
+        
+        #Hpath {
+            animation: pathH 2s ease infinite alternate;
+        }
+        
+        #circle {
+            transform-origin: 20% 0;
+            animation: updown 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes updown {
+            0% {
+                transform: translateY(10px);
+            }
+            50% {
+                transform: translateY(-225px) scaleX(0.8);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+        
+        @keyframes pathH {
+            0% {}
+            50% {}
+            100% {}
+        }
+    </style>
+</body>
+
+</html>
